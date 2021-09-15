@@ -7,18 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
     <style>
-        .tutorial-small-img {
-            width: 300px;
-            height: 300px;
+        .tutorial-img {
+            width: 500px;
+            height: 500px;
         }
 
-        .tutorial-large-img {
-            width: 400px;
-            height: 400px;
-        }
         nav {
             background-color: gray;
-            padding: 20px; 
+            padding: 20px;
         }
     </style>
 </head>
@@ -33,7 +29,7 @@
             The Basics
         </h2>
         <figure>
-            <img class='tutorial-small-img' alt='sudoku-diagram' src='/sudoku.png'>
+            <img class='tutorial-img' alt='sudoku-diagram' src='/sudoku.png'>
             <figcaption>
                 Sudou puzzles have a simple set of rules. The puzzle has 81 cells. In order to solve the puzzle, each 
                 cell needs to be filled in with a digit 1-9. However, each row, each column and each box can only have 
@@ -47,7 +43,7 @@
             Last-Remaining-Cell
         </h2>
         <figure>
-            <img class='tutorial-small-img' alt='last-remaining-cell-diagram' src='/lastRemainingCell.png'>
+            <img class='tutorial-img' alt='last-remaining-cell-diagram' src='/lastRemainingCell.png'>
             <figcaption>
                 The last-remaining-cell strategy comes into play when either a box, column or row has eight of its nine
                 values filled in
@@ -65,7 +61,7 @@
             Sole Candidate
         </h2>
         <figure>
-            <img class="tutorial-small-img" alt='sole candidate diagram' src='/soleCandidate.png'>
+            <img class="tutorial-img" alt='sole candidate diagram' src='/soleCandidate.png'>
             <figcaption>
                 Using the sole candidate strategy we can solve the green cell in the above to a solution of 7.
                 This strategy entails looking at the values in the related box (6,3,1,8,4), column (1,4,5)
@@ -83,7 +79,7 @@
             Unique Candidate Box
         </h2>
         <figure>
-            <img class='tutorial-small-img' alt='unique candidate diagram' src='/uniqueCandidate.png'>
+            <img class='tutorial-img' alt='unique candidate diagram' src='/uniqueCandidate.png'>
             <figcaption>
                 The unique candidate strategy lets us solve the green cell to the value 5. We simply pick a number to
                 look for, 5
@@ -105,7 +101,7 @@
             Unique Candidate Row/Col
         </h2>
         <figure>
-            <img class='tutorial-small-img' alt='unique candidate diagram' src='/uniqueCandidateRowOrCol.png'>
+            <img class='tutorial-img' alt='unique candidate diagram' src='/uniqueCandidateRowOrCol.png'>
             <figcaption>
                 This is the same rule as the previous, but applied to rows and columns. Here we can solve the green cell
                 for 2 because every other empty cell in its column can't have a 2.
@@ -118,7 +114,7 @@
             Pointing Pairs And Triples
         </h2>
         <figure>
-            <img class='tutoral-large-img' alt='pointing-pairs-and-triples diagram' src='./pointingPairsAndTriples.png'>
+            <img class='tutorial-img' alt='pointing-pairs-and-triples diagram' src='./pointingPairsAndTriples.png'>
             <figcaption>
                 Pointing pairs and triples has us searching by a possible value in a box that can only exist in two or
                 three
@@ -146,7 +142,7 @@
             Box Line Reduction
         </h2>
         <figure>
-            <img class='tutoral-large-img' alt='box-line-reduction diagram' src='./boxLineReduction.png'>
+            <img class='tutorial-img' alt='box-line-reduction diagram' src='./boxLineReduction.png'>
             <figcaption>
                 Box line reduction asks if there is a missing value from a row or column that can only occur in one of its cells
                 that intersect a single box. If so we are able to remove that possible value from every other empty 
@@ -165,7 +161,7 @@
             Naked Subset
         </h2>
         <figure>
-            <img class='tutoral-large-img' alt='naked subset diagram' src='./nakedSubset.png'>
+            <img class='tutorial-img' alt='naked subset diagram' src='./nakedSubset.png'>
             <figcaption>
                 We can use the naked subset rule to solve the green cell above to a value of 2. Like many sudoku
                 strategies,
@@ -193,7 +189,7 @@
             Hidden Subset
         </h2>
         <figure>
-            <img class='tutoral-large-img' alt='hidden subset diagram' src='./hiddenSubset.png'>
+            <img class='tutorial-img' alt='hidden subset diagram' src='./hiddenSubset.png'>
             <figcaption>
                 Hidden Subsets are very similar to naked subsets. One difference between hidden and naked subsets is that the 
                 sets of possible values will, for at least one of the cells, be greater than the set of values that unites them. 
